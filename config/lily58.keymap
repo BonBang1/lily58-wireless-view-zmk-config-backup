@@ -22,10 +22,10 @@
 
             display-name = "Base";
             bindings = <
-&none           &kp W           &kp E        &kp R             &kp T      &none                                 &none            &kp Y       &kp U  &kp I      &kp O       &none
-&kp Q           &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G      &none                                 &none            &kp H       &kp J  &kp K      &kp L       &kp SEMICOLON
-&mt LEFT_WIN A  &kp X           &kp C        &kp V             &kp B      &none                                 &none            &kp N       &kp M  &kp COMMA  &kp PERIOD  &kp P
-&lt 3 Z         &none           &none        &none             &none      &none        &kp LBKT       &kp RBKT  &none            &none       &none  &none      &none       &kp SLASH
+&none           &kp W           &kp E        &kp R             &kp T      &none                                 &none            &kp Y       &kp U              &kp I        &kp O            &none
+&kp Q           &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G      &none                                 &none            &kp H       &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp SEMICOLON
+&mt LEFT_WIN A  &kp X           &kp C        &kp V             &kp B      &none                                 &none            &kp N       &kp M              &kp COMMA    &kp PERIOD       &mt RIGHT_WIN P
+&lt 3 Z         &none           &none        &none             &none      &none        &kp LBKT       &kp RBKT  &none            &none       &none              &none        &none            &lt 3 SLASH
                                              &none             &lt 4 ESC  &lt 1 SPACE  &lt 2 MINUS    &kp RET   &lt 5 BACKSPACE  &kp DELETE  &none
             >;
 
