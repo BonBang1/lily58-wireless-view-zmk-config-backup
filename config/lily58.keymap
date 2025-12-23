@@ -12,7 +12,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        BaseLayer {
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
@@ -22,17 +22,17 @@
 
             display-name = "Base";
             bindings = <
-&none      &kp Q  &kp W  &kp E  &kp R   &kp T                            &none          &kp Y       &kp U  &kp I      &kp O       &none
-&kp TAB    &kp A  &kp S  &kp D  &kp F   &kp G                            &none          &kp H       &kp J  &kp K      &kp L       &kp SEMICOLON
-&kp LCTRL  &kp Z  &kp X  &kp C  &kp C   &kp B                            &none          &kp N       &kp M  &kp COMMA  &kp PERIOD  &kp P
-&kp LSHFT  &none  &none  &none  &none   &none      &kp LBKT    &kp RBKT  &none          &none       &none  &none      &none       &kp SLASH
-                         &none  &gresc  &kp SPACE  &none       &kp RET   &kp BACKSPACE  &kp DELETE  &none
+&none  &kp W  &kp E  &kp R  &kp T   &none                            &none          &kp Y       &kp U  &kp I      &kp O       &none
+&kp Q  &kp S  &kp D  &kp F  &kp G   &none                            &none          &kp H       &kp J  &kp K      &kp L       &kp SEMICOLON
+&kp A  &kp X  &kp C  &kp V  &kp B   &none                            &none          &kp N       &kp M  &kp COMMA  &kp PERIOD  &kp P
+&kp Z  &none  &none  &none  &none   &none      &kp LBKT    &kp RBKT  &none          &none       &none  &none      &none       &kp SLASH
+                     &none  &gresc  &kp SPACE  &none       &kp RET   &kp BACKSPACE  &kp DELETE  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        lower_layer {
+        NavigationLayer {
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
             // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
