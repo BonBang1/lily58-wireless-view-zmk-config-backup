@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&none  &kp W  &kp E  &kp R  &kp T      &none                              &none          &kp Y       &kp U  &kp I      &kp O       &none
-&kp Q  &kp S  &kp D  &kp F  &kp G      &none                              &none          &kp H       &kp J  &kp K      &kp L       &kp SEMICOLON
-&kp A  &kp X  &kp C  &kp V  &kp B      &none                              &none          &kp N       &kp M  &kp COMMA  &kp PERIOD  &kp P
-&kp Z  &none  &none  &none  &none      &none        &kp LBKT    &kp RBKT  &none          &none       &none  &none      &none       &kp SLASH
-                     &none  &lt 4 ESC  &lt 1 SPACE  &to 2       &kp RET   &kp BACKSPACE  &kp DELETE  &none
+&none           &kp W           &kp E        &kp R             &kp T      &none                                 &none          &kp Y       &kp U  &kp I      &kp O       &none
+&kp Q           &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G      &none                                 &none          &kp H       &kp J  &kp K      &kp L       &kp SEMICOLON
+&mt LEFT_WIN A  &kp X           &kp C        &kp V             &kp B      &none                                 &none          &kp N       &kp M  &kp COMMA  &kp PERIOD  &kp P
+&lt 3 Z         &none           &none        &none             &none      &none        &kp LBKT       &kp RBKT  &none          &none       &none  &none      &none       &kp SLASH
+                                             &none             &lt 4 ESC  &lt 1 SPACE  &lt 2 MINUS    &kp RET   &kp BACKSPACE  &kp DELETE  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
