@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&none           &kp W           &kp E        &kp R             &kp T      &none                                    &none            &kp Y       &kp U              &kp I        &kp O            &none
-&kp Q           &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G      &none                                    &none            &kp H       &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp SEMICOLON
-&mt LEFT_WIN A  &kp X           &kp C        &kp V             &kp B      &none                                    &none            &kp N       &kp M              &kp COMMA    &kp PERIOD       &mt RIGHT_WIN P
-&lt 3 Z         &none           &none        &none             &none      &none        &kp LBKT          &kp RBKT  &none            &none       &none              &none        &none            &lt 3 SLASH
-                                             &none             &lt 4 ESC  &lt 1 SPACE  &lt 2 C_REPEAT    &kp RET   &lt 5 BACKSPACE  &kp DELETE  &none
+&none           &kp W           &kp E        &kp R             &kp T      &none                                       &none            &kp Y         &kp U              &kp I        &kp O            &none
+&kp Q           &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G      &none                                       &none            &kp H         &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp SEMICOLON
+&mt LEFT_WIN A  &kp X           &kp C        &kp V             &kp B      &none                                       &none            &kp N         &kp M              &kp COMMA    &kp PERIOD       &mt RIGHT_WIN P
+&lt 3 Z         &none           &none        &none             &none      &none        &kp LBKT          &kp RBKT     &none            &none         &none              &none        &none            &lt 3 SLASH
+                                             &none             &lt 4 ESC  &lt 1 SPACE  &lt 2 C_REPEAT    &lt 6 ENTER  &lt 5 BACKSPACE  &lt 7 DELETE  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -44,21 +44,21 @@
 
         MouseLayer {
             bindings = <
-&trans        &trans        &trans     &trans          &trans  &trans                    &trans     &kp LC(Y)  &kp LC(V)       &kp LC(C)       &kp LC(X)     &trans
-&trans        &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans  &trans                    &trans     &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &kp LC(Z)
-&kp LEFT_WIN  &trans        &trans     &trans          &trans  &trans                    &trans     &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &mmv MOVE_RIGHT
-&trans        &trans        &trans     &trans          &trans  &trans  &trans    &trans  &trans     &trans     &trans          &trans          &trans        &msc SCRL_RIGHT
-                                       &trans          &trans  &trans  &trans    &trans  &mkp RCLK  &mkp LCLK  &mkp MCLK
+&trans        &trans        &trans     &trans          &trans  &trans                       &trans     &kp LC(Y)  &kp LC(V)       &kp LC(C)       &kp LC(X)     &trans
+&trans        &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans  &trans                       &trans     &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &kp LC(Z)
+&kp LEFT_WIN  &trans        &trans     &trans          &trans  &trans                       &trans     &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &mmv MOVE_RIGHT
+&trans        &trans        &trans     &trans          &trans  &trans  &trans    &trans     &trans     &trans     &trans          &trans          &trans        &msc SCRL_RIGHT
+                                       &trans          &trans  &trans  &trans    &mkp RCLK  &mkp LCLK  &mkp MCLK  &trans
             >;
         };
 
         ButtonLayer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans        &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LC(Y)  &trans                             &trans     &kp RC(Y)  &kp RC(V)        &kp RC(C)  &kp RC(X)      &trans
+&kp LC(Z)     &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans     &trans                             &trans     &trans     &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RC(Z)
+&kp LEFT_WIN  &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LC(Y)  &trans                             &trans     &kp RC(Y)  &kp RC(V)        &kp RC(C)  &kp RC(X)      &kp RIGHT_WIN
+&kp LC(Z)     &trans        &trans     &trans          &trans     &trans     &trans       &trans     &trans     &trans     &trans           &trans     &trans         &kp RC(Z)
+                                       &trans          &mkp MCLK  &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK  &mkp MCLK  &trans
             >;
         };
 
@@ -104,11 +104,11 @@
 
         AdditionalFeatures {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&bootloader  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
 
