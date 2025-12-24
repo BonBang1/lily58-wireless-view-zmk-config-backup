@@ -13,7 +13,7 @@
         compatible = "zmk,combos";
 
         Caps {
-            bindings = <&kp CAPSLOCK>;
+            bindings = <&kp LANG_HANGEUL>;
             key-positions = <21 22>;
         };
     };
