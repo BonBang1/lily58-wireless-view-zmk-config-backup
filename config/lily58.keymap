@@ -30,6 +30,11 @@
             bindings = <&kp LANG_HANGEUL>;
             key-positions = <15 20>;
         };
+
+        Language_2 {
+            bindings = <&kp LANG_HANGEUL>;
+            key-positions = <15 51>;
+        };
     };
 
     behaviors {
