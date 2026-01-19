@@ -26,11 +26,6 @@
             key-positions = <0 11>;
         };
 
-        Language {
-            bindings = <&kp LANG_HANGEUL>;
-            key-positions = <15 20>;
-        };
-
         Language_2 {
             bindings = <&kp LANG_HANGEUL>;
             key-positions = <15 51>;
